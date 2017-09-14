@@ -14,6 +14,7 @@
 		F8C3A8391F6A9BF100FF00D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C3A8371F6A9BF100FF00D4 /* LaunchScreen.storyboard */; };
 		F8C3A8411F6AA36A00FF00D4 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A8401F6AA36A00FF00D4 /* CustomTableViewCell.swift */; };
 		F8C3A8431F6AA4D100FF00D4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A8421F6AA4D100FF00D4 /* Movie.swift */; };
+		F8C3A8451F6AC70600FF00D4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A8441F6AC70600FF00D4 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F8C3A83A1F6A9BF100FF00D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8C3A8401F6AA36A00FF00D4 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		F8C3A8421F6AA4D100FF00D4 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		F8C3A8441F6AC70600FF00D4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F8C3A83A1F6A9BF100FF00D4 /* Info.plist */,
 				F8C3A8401F6AA36A00FF00D4 /* CustomTableViewCell.swift */,
 				F8C3A8421F6AA4D100FF00D4 /* Movie.swift */,
+				F8C3A8441F6AC70600FF00D4 /* SearchViewController.swift */,
 			);
 			path = "favourite-movies-app";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C3A8451F6AC70600FF00D4 /* SearchViewController.swift in Sources */,
 				F8C3A8411F6AA36A00FF00D4 /* CustomTableViewCell.swift in Sources */,
 				F8C3A8311F6A9BF100FF00D4 /* ViewController.swift in Sources */,
 				F8C3A8431F6AA4D100FF00D4 /* Movie.swift in Sources */,
