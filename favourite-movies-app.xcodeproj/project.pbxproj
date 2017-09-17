@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F85691E11F6DC67B00216471 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = F85691E01F6DC36D00216471 /* Keys.plist */; };
 		F8C3A82F1F6A9BF100FF00D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A82E1F6A9BF100FF00D4 /* AppDelegate.swift */; };
 		F8C3A8311F6A9BF100FF00D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3A8301F6A9BF100FF00D4 /* ViewController.swift */; };
 		F8C3A8341F6A9BF100FF00D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C3A8321F6A9BF100FF00D4 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F85691E01F6DC36D00216471 /* Keys.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		F8C3A82B1F6A9BF100FF00D4 /* favourite-movies-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "favourite-movies-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C3A82E1F6A9BF100FF00D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8C3A8301F6A9BF100FF00D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				F8C3A8461F6AFCA900FF00D4 /* HTTPHandler.swift */,
 				F8C3A8481F6AFDA100FF00D4 /* JSONParser.swift */,
 				F8C3A84A1F6AFE1C00FF00D4 /* MovieDataProcessor.swift */,
+				F85691E01F6DC36D00216471 /* Keys.plist */,
 			);
 			path = "favourite-movies-app";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85691E11F6DC67B00216471 /* Keys.plist in Resources */,
 				F8C3A8391F6A9BF100FF00D4 /* LaunchScreen.storyboard in Resources */,
 				F8C3A8361F6A9BF100FF00D4 /* Assets.xcassets in Resources */,
 				F8C3A8341F6A9BF100FF00D4 /* Main.storyboard in Resources */,
@@ -321,6 +325,7 @@
 				F8C3A83F1F6A9BF100FF00D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

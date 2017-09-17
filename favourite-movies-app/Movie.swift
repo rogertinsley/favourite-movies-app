@@ -10,18 +10,18 @@ import Foundation
 
 class Movie {
     
-    var id      : String = ""
-    var title   : String = ""
-    var year    : String = ""
-    var imageUrl: String = ""
-    var plot    : String = ""
+    var id       : String = ""
+    var title    : String = ""
+    var year     : String = ""
+    var imageUrl : String = ""
+    var overview : String = ""
 
-    init(id: String, title: String, year: String, imageUrl: String, plot: String = "") {
+    init(id: String, title: String, year: String, imageUrl: String, overview: String) {
         self.id       = id
         self.title    = title
         self.year     = year
         self.imageUrl = imageUrl
-        self.plot     = plot
+        self.overview = overview
     }
     
 }

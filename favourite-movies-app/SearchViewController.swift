@@ -24,8 +24,14 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func retrieveMoviesByTerm(searchTerm: String) {
-        let url = "https://api.themoviedb.org/3/search/movie?api_key=API_KEY&language=en-US&query=\(searchTerm)&page=1&include_adult=false";
-        HTTPHandler.getJson(urlString: url, completionHandler: parseDataIntoMovies)
+        if let path = Bundle.main.path(forResource: "Keys", ofType: "plist") {
+            if let dictionary = NSDictionary(contentsOfFile: path) {
+                let api_key = dictionary["api_key"] as! String
+                let url     = "https://api.themoviedb.org/3/search/movie?api_key=\(api_key)&language=en-US&query=\(searchTerm)&page=1&include_adult=false";
+                
+                HTTPHandler.getJson(urlString: url, completionHandler: parseDataIntoMovies)
+            }
+        }
     }
     
     func parseDataIntoMovies(data: Data?) -> Void {
@@ -61,14 +67,17 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let moviecell  = tableView.dequeueReusableCell(withIdentifier: "customcell", for: indexPath) as! CustomTableViewCell
         let index: Int = indexPath.row
         
-        moviecell.favButton.tag    = index
-        moviecell.movieTitle?.text = searchResults[index].title
-        moviecell.movieYear?.text  = searchResults[index].year
+        moviecell.favButton.tag       = index
+        moviecell.movieTitle?.text    = searchResults[index].title
+        moviecell.movieYear?.text     = searchResults[index].year
+        moviecell.movieOverview?.text = searchResults[index].overview
         
         displayMovieImage(index, moviecell: moviecell)
         
         return moviecell
     }
+    
+    didc
     
     func displayMovieImage(_ row: Int, moviecell: CustomTableViewCell) {
         let url: String = (URL(string: searchResults[row].imageUrl)?.absoluteString)!

@@ -24,11 +24,12 @@ class MovieDataProcessor {
                 let id       = movie["id"]           as? Int,
                 let name     = movie["title"]        as? String,
                 let year     = movie["release_date"] as? String,
-                let imageUrl = movie["poster_path"]  as? String
+                let imageUrl = movie["poster_path"]  as? String,
+                let overview = movie["overview"]     as? String
                 
             else { continue }
             
-            let movieClass = Movie(id: String(id), title: name, year: year, imageUrl: "https://image.tmdb.org/t/p/w160\(imageUrl)")
+            let movieClass = Movie(id: String(id), title: name, year: year, imageUrl: "https://image.tmdb.org/t/p/w160\(imageUrl)", overview: overview)
             mappedMovies.append(movieClass)
         }
         print("total movies: \(mappedMovies.count)")
