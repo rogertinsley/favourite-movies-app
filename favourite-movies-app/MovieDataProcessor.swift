@@ -28,10 +28,16 @@ class MovieDataProcessor {
                 let overview = movie["overview"]     as? String
                 
             else { continue }
-            
-            let movieClass = Movie(id: String(id), title: name, year: year, imageUrl: "https://image.tmdb.org/t/p/w160\(imageUrl)", overview: overview)
-            mappedMovies.append(movieClass)
+           
+            mappedMovies.append(
+                Movie(id       : String(id),
+                      title    : name,
+                      year     : year,
+                      imageUrl : "https://image.tmdb.org/t/p/w160\(imageUrl)",
+                      overview : overview)
+            )
         }
+        
         print("total movies: \(mappedMovies.count)")
         return mappedMovies
     }

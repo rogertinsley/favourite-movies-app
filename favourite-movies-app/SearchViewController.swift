@@ -77,7 +77,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return moviecell
     }
     
-    didc
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index: Int = indexPath.row
+        if let url =  searchResults[index].url {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
     
     func displayMovieImage(_ row: Int, moviecell: CustomTableViewCell) {
         let url: String = (URL(string: searchResults[row].imageUrl)?.absoluteString)!

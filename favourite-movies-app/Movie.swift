@@ -15,6 +15,7 @@ class Movie {
     var year     : String = ""
     var imageUrl : String = ""
     var overview : String = ""
+    var url      : URL!
 
     init(id: String, title: String, year: String, imageUrl: String, overview: String) {
         self.id       = id
@@ -22,6 +23,7 @@ class Movie {
         self.year     = year
         self.imageUrl = imageUrl
         self.overview = overview
+        self.url      = URL(string: "https://www.themoviedb.org/movie/\(id)")
     }
     
 }
